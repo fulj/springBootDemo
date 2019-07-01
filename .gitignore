@@ -33,5 +33,5 @@ logs
 .DS_Store
 .idea
 .svn
-*.iml
-*.mvnw
+.iml
+.mvnw
