@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Configuration
 @EnableAutoConfiguration
 @RestController
+@MapperScan("com.example.app.dao")
 public class DemoApplication {
 
     @Value("${config.name}")
