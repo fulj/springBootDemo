@@ -1,11 +1,13 @@
-package com.example.demo.fulj;
+package com.example.demo.springDemo.postProcessor;
 
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 
 /**
  * @author fulj
  * @date 2019年06月29日 6:12 PM
  */
+@Component
 public class MyJavaBean implements InitializingBean {
     private String desc;
     private String remark;

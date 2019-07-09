@@ -1,4 +1,4 @@
-package com.example.demo.aop;
+package com.example.demo.springDemo.testAware;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,11 +11,12 @@ public class Bootstrap {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-        SimpleAopBean bean = context.getBean(SimpleAopBean.class);
-        bean.testB();
-        System.out.println(bean.getClass().getSimpleName());
-        System.out.println(bean.getRemark());
-        context.close();
+        CustomApplicationAware customApplicationAware = (CustomApplicationAware) context.getBean("customApplicationAware");
+        customApplicationAware.say();
+        customApplicationAware.say2();
     }
+
+
+
 
 }

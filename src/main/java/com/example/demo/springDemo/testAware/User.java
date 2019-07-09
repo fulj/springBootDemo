@@ -1,4 +1,4 @@
-package com.example.demo.fulj.testAware;
+package com.example.demo.springDemo.testAware;
 
 import org.springframework.stereotype.Component;
 
