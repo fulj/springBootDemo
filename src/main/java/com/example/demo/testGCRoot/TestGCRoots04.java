@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 测试成员变量引用对象是否可作为GCRoots
- * -Xms1024m -Xmx1024m -Xmn512m -XX:+PrintGCDetails
+ * -Xms1024m -Xmx1024m -Xmn512m -XX:+PrintGCDetails test
  *
  * @author ljl
  */
